@@ -212,7 +212,9 @@ const keycloakifyExtraMessages = {
         "shouldMatchPattern": "Pattern should match: `/{0}/`",
         "mustBeAnInteger": "Must be an integer",
         "notAValidOption": "Not a valid option",
-        "selectAnOption": "Select an option"
+        "selectAnOption": "Select an option",
+        "smsPhoneNumberLabel": "Phone number",
+        "smsPhoneNumberInstructions": "Instrucciones de SMS"
     },
     "fr": {
         /* spell-checker: disable */
@@ -225,7 +227,9 @@ const keycloakifyExtraMessages = {
         "logoutConfirmTitle": "Déconnexion",
         "logoutConfirmHeader": "Êtes-vous sûr(e) de vouloir vous déconnecter ?",
         "doLogout": "Se déconnecter",
-        "selectAnOption": "Sélectionner une option"
+        "selectAnOption": "Sélectionner une option",
+        "smsPhoneNumberLabel": "Téléphone",
+        "smsPhoneNumberInstructions": "Instrucciones de SMS"
         /* spell-checker: enable */
     }
 };

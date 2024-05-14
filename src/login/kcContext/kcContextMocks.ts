@@ -676,6 +676,13 @@ export const kcContextMocks = [
     id<KcContext.LoginPageExpired>({
         ...kcContextCommonMock,
         pageId: "login-page-expired.ftl"
+    }),
+    id<KcContext.MobileNumberForm>({
+        ...kcContextCommonMock,
+        pageId: "mobile-number-form.ftl",
+        phonenumber: {
+            disabled: true
+        }
     })
 ];
 

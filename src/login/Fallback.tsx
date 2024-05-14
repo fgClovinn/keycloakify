@@ -30,6 +30,7 @@ const IdpReviewUserProfile = lazy(() => import("keycloakify/login/pages/IdpRevie
 const UpdateEmail = lazy(() => import("keycloakify/login/pages/UpdateEmail"));
 const SelectAuthenticator = lazy(() => import("keycloakify/login/pages/SelectAuthenticator"));
 const SamlPostForm = lazy(() => import("keycloakify/login/pages/SamlPostForm"));
+const MobileNumberForm = lazy(() => import("keycloakify/login/pages/MobileNumberForm"));
 
 export default function Fallback(props: PageProps<KcContext, I18n>) {
     const { kcContext, ...rest } = props;
@@ -90,6 +91,8 @@ export default function Fallback(props: PageProps<KcContext, I18n>) {
                         return <SelectAuthenticator kcContext={kcContext} {...rest} />;
                     case "saml-post-form.ftl":
                         return <SamlPostForm kcContext={kcContext} {...rest} />;
+                    case "mobile-number-form.ftl":
+                        return <MobileNumberForm kcContext={kcContext} {...rest} />;
                 }
                 assert<Equals<typeof kcContext, never>>(false);
             })()}

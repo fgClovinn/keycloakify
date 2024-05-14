@@ -24,7 +24,8 @@ export const loginThemePageIds = [
     "idp-review-user-profile.ftl",
     "update-email.ftl",
     "select-authenticator.ftl",
-    "saml-post-form.ftl"
+    "saml-post-form.ftl",
+    "mobile-number-form.ftl"
 ] as const;
 
 export const accountThemePageIds = ["password.ftl", "account.ftl", "sessions.ftl", "totp.ftl", "applications.ftl", "log.ftl"] as const;

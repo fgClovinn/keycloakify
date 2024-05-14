@@ -36,7 +36,8 @@ export type KcContext =
     | KcContext.IdpReviewUserProfile
     | KcContext.UpdateEmail
     | KcContext.SelectAuthenticator
-    | KcContext.SamlPostForm;
+    | KcContext.SamlPostForm
+    | KcContext.MobileNumberForm;
 
 export declare namespace KcContext {
     export type Common = {
@@ -126,6 +127,13 @@ export declare namespace KcContext {
             SAMLRequest?: string;
             SAMLResponse?: string;
             relayState?: string;
+        };
+    };
+
+    export type MobileNumberForm = Common & {
+        pageId: "mobile-number-form.ftl";
+        phonenumber: {
+            disabled: boolean;
         };
     };
 
